@@ -145,7 +145,7 @@ header .page-header-hero p {
 }
 
 main section:nth-of-type(even) {
-  background-color: lightgray;
+  background-color: #f6f6f6;
 }
 main > section:nth-of-type(even) .container {
   flex-direction: row-reverse;
