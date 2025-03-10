@@ -1,0 +1,146 @@
+/****** RESET ******/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/***** UTILS *****/
+
+.container {
+  width: 800px;
+  margin: auto;
+  display: flex;
+}
+
+section.hero,
+main > section {
+  padding: 30px 0px;
+}
+
+/****** HEADER ******/
+
+header {
+  background-color: aqua;
+}
+
+header > .container {
+  flex-direction: column;
+}
+
+.page-header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: orange;
+  margin: 10px 0px;
+  padding: 15px;
+}
+
+.page-header-nav > * {
+  width: 150px;
+}
+
+.page-header-nav > ul {
+  text-align: center;
+  flex-grow: 2;
+}
+
+.page-header-nav > a.login {
+  text-align: right;
+}
+
+header .hero {
+  background-color: blue;
+  width: 100%;
+  margin: auto;
+}
+
+header .page-header-hero {
+  background-color: pink;
+  width: 600px;
+  height: 300px;
+  margin: auto;
+}
+
+/****** MAIN ******/
+
+.content-section .content-large {
+  width: 60%;
+  height: 400px;
+  background-color: rgb(35, 120, 212);
+}
+
+.content-section .content-small {
+  width: 40%;
+  height: 400px;
+  background-color: rgb(247, 192, 224);
+}
+
+main section:nth-of-type(even) {
+  background-color: lightgray;
+}
+main > section:nth-of-type(even) .container {
+  flex-direction: row-reverse;
+}
+
+.content-section .content-single {
+  width: 100%;
+  height: 500px;
+  background-color: green;
+}
+
+/****** FOOTER ******/
+footer {
+  background-color: darkslategrey;
+}
+
+footer > .container {
+  flex-direction: column;
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.main-content-footer {
+  width: 350px;
+  height: 500px;
+  background-color: pink;
+}
+
+.secondary-content-footer {
+  width: 100%;
+  height: 500px;
+  background-color: rgb(0, 67, 148);
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.secondary-content-footer > div {
+  border: 1px dashed white;
+  width: 25%;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0px;
+  background-color: aquamarine;
+  margin-top: 15px;
+}
