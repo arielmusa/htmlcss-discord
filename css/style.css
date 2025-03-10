@@ -135,11 +135,13 @@ header .page-header-hero p {
 
 .content-section .content-large {
   width: 60%;
+  text-align: center;
 }
 
 .content-section .content-small {
   width: 40%;
   align-content: center;
+  padding: 0px 70px;
 }
 
 main section:nth-of-type(even) {
